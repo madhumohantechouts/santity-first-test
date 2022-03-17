@@ -9,7 +9,7 @@ class HttpClient extends http.BaseClient {
 
   final http.Client _inner;
   final String? token;
-
+//dvs
   @override
   Future<http.StreamedResponse> send(http.BaseRequest request) {
     if (token != null) {
