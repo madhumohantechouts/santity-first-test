@@ -47,7 +47,8 @@ class _MyHomePageState extends State<MyHomePage> {
       var parts = refId!.split('-');
       var id = parts[1];
       var format = parts[3];
-      element.image?.url = "https://cdn.sanity.io/images/393192tp/production/$id-${parts[2]}.$format";
+      var size = parts[2];
+      element.image?.url = "https://cdn.sanity.io/images/$projectId/$dataSet/$id-$size.$format";
     });
 
     setState(() {
